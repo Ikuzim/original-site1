@@ -1,73 +1,78 @@
 <!DOCTYPE html>
-<head>
-  <meta charset="utf-8">
-　<meta name="viewport" content="width=device-width,initial-scale=1">
-　<meta http-equiv="X-UA-Compatible" content="IE=edge">
-　<meta http-equiv="Content-Script-Type" content="text/javascript;">
-　<meta http-equiv="Content-Style-Type" content="text/css;">
-　<link rel="stylesheet" href="./css/sp_init_top.css" media="(max-width: 549px)">
-　<link rel="stylesheet" href="./css/pc_init_top.css" media="print,screen and (min-width: 550px)">
-　<link rel="stylesheet" href="./css/style.css" media="(max-width: 549px)">
-　<link rel="icon" href="./image/favicon.png">
-　<link rel="shortcut icon" href="./image/favicon.ico" type="image/vnd.microsoft.ico">
-</head>
+<html lang="ja">
+	<head>
+	  <meta charset="utf-8">
+	　<meta name="viewport" content="width=device-width,initial-scale=1">
+	　<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	　<meta http-equiv="Content-Script-Type" content="text/javascript;">
+	　<meta http-equiv="Content-Style-Type" content="text/css;">
+	　<link rel="stylesheet" href="./css/stylesheet.css">
+	　<link rel="icon" href="./image/favicon.png">
+	　<link rel="shortcut icon" href="./image/favicon.ico" type="image/vnd.microsoft.ico">
+	  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	</head>
+	
+	<body>
+		<header>
+		 <div class="sensei-icon">
+		  
+		 </div>
+		 <div class="link-btn">
+		     <ul>
+		         <li>
+            　     <a href ="#senseikara">先生から</a>
+                 </li>
+                 <li>
+                　<a href ="#syousai">詳細</a>
+                 </li>
+                 <li>
+                　<a href ="#moushikomi">申込</a> 
+                 </li>
+		     </ul>
+		 </div>
+		</header>
 
-<body>
-<header>
- <div class="sensei-icon">
-     <img src ="#">
- </div>
- <div class="linnk-btn">
-     <ul>
-         <li>
-             
-         </li>
-         <li>
-             
-         </li>
-         <li>
-             
-         </li>
-     </ul>
- </div>
-</header>
-<main>
-    <div class="top-message">
-        <h1></h1>
-    </div>
-    <div class="top-picture">
-        <img src ="#">
-    </div>
-    <div class ="sensei-message">
-        <div class="sensei-message-box">
-            <div class="sensei-icon">
-                <img src ="#">
-            </div>
-            <div class "message">
-                
-            </div>
-        </div>
-    </div>
-    <div class="syousai">
-        <div class="syousai-box">
-            <div class="syousai-message">
-                <h2></h2>
-                <p></p>
-                <p></p>
-                <p></p>
-            </div>
-            <div class="map">
-                script
-            </div>
-        </div>
-    </div>
-</main>
-<footer>
-  <div class="form">
-     <h2></h2>
-     <p></p>
-     <p></p>
-     <p></p> 
-  </div>  
-</footer>
-</body>
+		<main>
+		    <div class="top-message">
+		        <h1 id ="senseikara">吉田ゼミ20周年記念パーティー</h1>
+		    </div>
+		    <div class="top-picture">
+		        <img src ="https://static.pexels.com/photos/27431/pexels-photo-27431.jpg">
+		    </div>
+		    <div class ="sensei-message">
+		        <div class="sensei-message-box">
+		            <div class="sensei-icon">
+		                <img src ="./image/sensei.jpg">
+		            </div>
+		            <div class ="message">
+		                今年で吉田ゼミも20年目を迎えることとなりました。卒業したゼミ生は合計で220名。感慨深いです。今回は20期の学生諸君を中心として全吉田ゼミOBOGの交流会を実施することになりましたので皆さんにご案内します。ぜひ先輩方、現役のゼミ生の刺激になるような社会人としての姿を見せに交流会に参加をしてください。私も、みなさんと会えるのを楽しみにしています。
+		            </div>
+		        </div>
+		    </div>
+		    <div class="syousai">
+		        <div class="syousai-box">
+		            <div class="syousai-message">
+		                <h2 id ="syousai">詳細</h2>
+		                <p>3月25日(土) 18:00〜</p>
+                        <p>Bar XXX</p>
+                        <p>（恵比寿ガーデンプレイス1F）</p>
+                        <p>【参加費】</p>
+                        <p>4000円</p>
+		            </div>
+		            <div class="map">
+		                 <div class="ggmap"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1621.2074261830512!2d139.7123926561501!3d35.64214933972247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b15d77d1725%3A0xb5bcd9d507694b0e!2z5oG15q-U5a-_44Ks44O844OH44Oz44OX44Os44Kk44K544K_44Ov44O8!5e0!3m2!1sja!2sjp!4v1486914958985" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		            </div>
+		        </div>
+		    </div>
+		</main>
+
+		<footer>
+		  <div class="form">
+		     <h2 id="moushikomi">参加申込</h2>
+		     <p>代表幹事嶋田までご連絡ください。</p>
+             <p>Tel 090-2882-0452</p>
+             <p>Mail karei-yoshida@tohoku.ac.jp</p> 
+		  </div>  
+		</footer>
+	</body>
+</html>
